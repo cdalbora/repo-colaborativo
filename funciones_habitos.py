@@ -22,3 +22,27 @@ def registrar_habitos():
     return lista_act 
 
     
+def analisar_habitos(lista):
+    '''
+    Analiza la lista de actividades y cuenta cuántas veces aparece cada una.
+
+    Parameters
+    ----------
+    lista : list
+        Lista de actividades ingresadas por el usuario.
+
+    Returns
+    -------
+    dict
+    Diccionario con cada actividad y la cantidad de veces que aparece.
+
+    '''
+    
+    resultado = {}
+    for actividad in lista:
+        if actividad in resultado:
+            resultado[actividad] += 1
+        else:
+            resultado[actividad] = 1
+            
+    return resultado
