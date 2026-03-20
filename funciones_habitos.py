@@ -22,7 +22,7 @@ def registrar_habitos():
     return lista_act 
 
     
-def analisar_habitos(lista):
+def analizar_habitos(lista):
     '''
     Analiza la lista de actividades y cuenta cuántas veces aparece cada una.
 
